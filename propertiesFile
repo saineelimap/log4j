@@ -1,0 +1,41 @@
+
+    log4j.rootLogger=TRACE,DB
+#       
+#    log4j.appender.consoleAppender=org.apache.log4j.ConsoleAppender  
+#    log4j.appender.consoleAppender.layout=org.apache.log4j.PatternLayout  
+#    log4j.appender.consoleAppender.layout.ConversionPattern=[%t] %-5p %c %x - %m%n  
+#       
+#    log4j.appender.fileAppender=org.apache.log4j.RollingFileAppender  
+#    log4j.appender.fileAppender.layout=org.apache.log4j.PatternLayout  
+#    log4j.appender.fileAppender.layout.ConversionPattern=[%t] %-5p %c %x - %m%n  
+#    log4j.appender.fileAppender.File=/home/miracle/Desktop/neelima/demoApplication.log  
+#    
+#    
+#    log4j
+/
+log4j.rootLogger=TRACE,DB # # log4j.appender.consoleAppender=org.apache.log4j.ConsoleAppender # log4j.appender.consoleAppender.layout=org.apache.log4j.PatternLayout # log4j.appender.consoleAppender.layout.ConversionPattern=[%t] %-5p %c %x - %m%n # # log4j.appender.fileAppender=org.apache.log4j.RollingFileAppender # log4j.appender.fileAppender.layout=org.apache.log4j.PatternLayout # log4j.appender.fileAppender.layout.ConversionPattern=[%t] %-5p %c %x - %m%n # log4j.appender.fileAppender.File=
+/
+home
+/
+miracle
+/
+Desktop
+/
+neelima
+/
+demoApplication.log # # # log4j.appender.DB=org.apache.log4j.JDBCAppender log4j.appender.DB.driver=com.ibm.db2.jcc.DB2Driver log4j.appender.DB.URL=jdbc:db2:
+/
+172.17.0.142:50001
+/
+￼
+in
+main
+Cancel Changes
+￼ Edit new file
+    log4j.appender.DB=org.apache.log4j.JDBCAppender
+    log4j.appender.DB.driver=com.ibm.db2.jcc.DB2Driver
+     log4j.appender.DB.URL=jdbc:db2://172.17.0.142:50001/itgdb
+      log4j.appender.DB.user=ITGUSR11
+      log4j.appender.DB.password=miracle11
+    log4j.appender.DB.layout=org.apache.log4j.PatternLayout  
+    log4j.appender.DB.sql=INSERT INTO NEELIMA VALUES('%x','%p','%m')
